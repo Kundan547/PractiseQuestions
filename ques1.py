@@ -13,3 +13,16 @@ for i in range(2000, 3201):
 print(','.join(l))
 
 
+#Using loops for this
+
+for i in range(2000,3201):
+    if i%7 == 0 and i%5!=0:
+        print(i,end=',')
+print("\b")
+
+
+#Using generators and list comprehension
+
+print(*(i for i in range(2000, 3201) if i%7 == 0 and i%5 != 0), sep=",")
+
+
